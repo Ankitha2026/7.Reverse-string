@@ -1,0 +1,16 @@
+#Problem 7:
+#Reverse words in a given String in Python
+#We are given a string and we need to reverse words of given string ?
+
+#Examples:
+
+#Input : str = "think career in IT think dlithe"
+#Output : str = "dlithe think IT in career think"
+
+def rev_sentence(sentence):
+    words = sentence.split(' ')
+    reverse_sentence = ' '.join(reversed(words))
+    return reverse_sentence
+if __name__ == "__main__":
+    input = input("Enter the string :")
+    print(rev_sentence(input))
